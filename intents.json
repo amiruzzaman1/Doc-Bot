@@ -1,0 +1,846 @@
+{
+  "intents": [
+    {
+      "tag": "who_are_you",
+      "patterns": ["Who are you?", "What are you?", "What is your purpose?", "Tell me about yourself"],
+      "responses": ["I am a medical bot that helps people with medical-related queries."]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "Which do you have?",
+        "What kinds of services are available here?",
+        "What do you offer?"
+      ],
+      "responses": [
+        "We offer medical services"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "What are the available payment methods?",
+        "Do you take Bank cards?",
+        "Do you accept Visa?",
+        "Can I pay with Bank?",
+        "Do you accept cash?"
+      ],
+      "responses": [
+        "We accept Bkash, Visa cards and cash"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does report takes to deliver?",
+        "When do I get my report?"
+      ],
+      "responses": [
+        "You will receive your report within 24 hours",
+        "You will receive electronically generated report within 24 hours"
+      ]
+    },
+    {
+      "tag": "heart_attack_symptoms",
+      "patterns": [
+        "What are the symptoms of a heart attack?",
+        "Signs of heart attack",
+        "How to recognize a heart attack?"
+      ],
+      "responses": [
+        "Common symptoms of a heart attack include chest pain, shortness of breath, nausea, and lightheadedness. If you experience these symptoms, seek medical attention immediately.",
+        "A heart attack can be recognized by symptoms such as chest pain or discomfort, pain radiating to the arm, shortness of breath, nausea, and cold sweats. If you suspect a heart attack, call 911."
+      ]
+    },
+    {
+      "tag": "heart_attack_prevention",
+      "patterns": [
+        "How can I prevent a heart attack?",
+        "Tips for heart attack prevention",
+        "What should I do to reduce my risk of a heart attack?"
+      ],
+      "responses": [
+        "To reduce your risk of a heart attack, maintain a healthy diet, exercise regularly, avoid smoking, limit alcohol consumption, and manage stress. Regular check-ups with your doctor are also important.",
+        "Preventing a heart attack involves adopting a heart-healthy lifestyle, which includes eating a balanced diet, staying physically active, not smoking, and managing risk factors such as high blood pressure and cholesterol."
+      ]
+    },
+    {
+      "tag": "emergency_heart_attack",
+      "patterns": [
+        "What should I do in case of a heart attack?",
+        "First aid for a heart attack",
+        "Steps to take during a heart attack"
+      ],
+      "responses": [
+        "In case of a suspected heart attack, call 911 immediately. While waiting for help, try to keep the person calm and comfortable. If they are conscious and not allergic, give them aspirin if available.",
+        "If you or someone experiences symptoms of a heart attack, call 911 right away. Chewing aspirin if available may help. Stay calm, and wait for emergency services to arrive."
+      ]
+    },
+    {
+      "tag": "what_is_heart_attack",
+      "patterns": [
+        "What is a heart attack?",
+        "Define heart attack",
+        "Explanation of heart attack"
+      ],
+      "responses": [
+        "A heart attack, also known as a myocardial infarction, occurs when there is a blockage in the blood supply to the heart muscle. This blockage can be caused by a blood clot or plaque buildup in the coronary arteries. It can lead to damage or death of the heart muscle tissue and is a medical emergency."
+      ]
+    },
+    {
+      "tag": "risk_factors_heart_attack",
+      "patterns": [
+        "What are the risk factors for a heart attack?",
+        "Factors that increase heart attack risk",
+        "Who is at risk of a heart attack?"
+      ],
+      "responses": [
+        "Risk factors for a heart attack include high blood pressure, high cholesterol, smoking, obesity, diabetes, family history of heart disease, and a sedentary lifestyle. Age, gender, and genetics also play a role."
+      ]
+    },
+    {
+      "tag": "heart_attack_diagnosis",
+      "patterns": [
+        "How is a heart attack diagnosed?",
+        "Heart attack diagnosis process",
+        "Tests for detecting a heart attack"
+      ],
+      "responses": [
+        "Doctors diagnose a heart attack through various tests, including an electrocardiogram (ECG or EKG), blood tests to measure cardiac enzymes, and imaging tests like angiography or echocardiography. These tests help determine the extent of damage and guide treatment."
+      ]
+    },
+    {
+      "tag": "heart_attack_treatment",
+      "patterns": [
+        "What is the treatment for a heart attack?",
+        "How are heart attacks treated?",
+        "Medical procedures for heart attack"
+      ],
+      "responses": [
+        "Treatment for a heart attack may include medications to dissolve clots and reduce pain, angioplasty and stent placement to open blocked arteries, and in severe cases, coronary artery bypass surgery. Rehabilitation and lifestyle changes are also essential for recovery."
+      ]
+    },
+    {
+      "tag": "chest_pain",
+      "patterns": ["I am having chest pain", "Chest pain help", "What should I do for chest pain?"],
+      "responses": [
+        "I'm not a doctor, but if you're experiencing chest pain, it could be a serious medical emergency. Please seek immediate medical attention by calling 999 or call us - 01854654564. It's better to be safe and have a medical professional assess your condition."
+      ]
+    },
+    {
+      "tag": "diabetes_definition",
+      "patterns": [
+        "What is diabetes?",
+        "Define diabetes",
+        "Explanation of diabetes"
+      ],
+      "responses": [
+        "Diabetes is a chronic medical condition that affects how your body processes glucose (sugar). It can result in high blood sugar levels, which can lead to various health complications."
+      ]
+    },
+    {
+      "tag": "types_of_diabetes",
+      "patterns": [
+        "What are the types of diabetes?",
+        "Different kinds of diabetes",
+        "Types of diabetic conditions"
+      ],
+      "responses": [
+        "There are primarily two types of diabetes: Type 1 diabetes, where the body doesn't produce insulin, and Type 2 diabetes, where the body's cells don't respond effectively to insulin. There's also gestational diabetes that occurs during pregnancy."
+      ]
+    },
+    {
+      "tag": "diabetes_symptoms",
+      "patterns": [
+        "What are the symptoms of diabetes?",
+        "Signs of diabetes",
+        "How to recognize diabetes?"
+      ],
+      "responses": [
+        "Common symptoms of diabetes include frequent urination, excessive thirst, unexplained weight loss, fatigue, blurred vision, and slow wound healing. If you experience these symptoms, it's important to consult a healthcare professional."
+      ]
+    },
+    {
+      "tag": "diabetes_causes",
+      "patterns": [
+        "What causes diabetes?",
+        "Why do people get diabetes?",
+        "Factors leading to diabetes"
+      ],
+      "responses": [
+        "The exact causes of diabetes can vary. Type 1 diabetes is often due to an autoimmune response, while Type 2 diabetes is linked to factors like genetics, obesity, and lifestyle choices. Gestational diabetes can occur during pregnancy due to hormonal changes."
+      ]
+    },
+    {
+      "tag": "diabetes_management",
+      "patterns": [
+        "How to manage diabetes?",
+        "Tips for diabetic management",
+        "Ways to control diabetes"
+      ],
+      "responses": [
+        "Managing diabetes involves monitoring blood sugar levels, following a balanced diet, regular exercise, taking prescribed medications or insulin, and maintaining a healthy lifestyle. Regular check-ups with a healthcare provider are essential."
+      ]
+    },
+    {
+      "tag": "diabetes_diet",
+      "patterns": [
+        "What is a diabetic diet?",
+        "What should I eat if I have diabetes?",
+        "Diabetes-friendly foods"
+      ],
+      "responses": [
+        "A diabetic diet focuses on controlling blood sugar levels. It typically includes whole grains, lean proteins, plenty of vegetables, and limited sugar and refined carbohydrates. Consult a dietitian for a personalized meal plan."
+      ]
+    },
+    {
+      "tag": "diabetes_medication",
+      "patterns": [
+        "What medications are used for diabetes?",
+        "Diabetes drugs",
+        "Prescription for diabetes"
+      ],
+      "responses": [
+        "There are various medications available for diabetes, including insulin, oral medications like metformin, sulfonylureas, and others. The choice of medication depends on the type and severity of diabetes, and it's prescribed by a healthcare provider."
+      ]
+    },
+    {
+      "tag": "diabetes_complications",
+      "patterns": [
+        "What are the complications of diabetes?",
+        "Diabetes-related health problems",
+        "Effects of diabetes on the body"
+      ],
+      "responses": [
+        "Diabetes can lead to complications such as heart disease, kidney problems, neuropathy, vision issues, and more. Proper diabetes management and regular medical care can help prevent or manage these complications."
+      ]
+    },
+    {
+      "tag": "diabetes_prevention",
+      "patterns": [
+        "How to prevent diabetes?",
+        "Preventive measures for diabetes",
+        "Ways to avoid diabetes"
+      ],
+      "responses": [
+        "Type 2 diabetes can often be prevented or delayed by maintaining a healthy weight, being physically active, and making healthy food choices. Regular health check-ups are important for early detection."
+      ]
+    },
+    {
+      "tag": "diabetes_support",
+      "patterns": [
+        "Where can I find support for diabetes?",
+        "Diabetes support groups",
+        "Help for managing diabetes"
+      ],
+      "responses": [
+        "You can find support for diabetes through local support groups, online communities, and by consulting healthcare professionals. These resources can provide guidance, information, and emotional support for managing diabetes."
+      ]
+    },
+    {
+      "tag": "diabetes_testing",
+      "patterns": [
+        "How is diabetes diagnosed?",
+        "Diabetes testing process",
+        "Tests for detecting diabetes"
+      ],
+      "responses": [
+        "Diabetes is diagnosed through blood tests that measure blood sugar levels. Fasting blood sugar tests, oral glucose tolerance tests, and A1C tests are commonly used for diagnosis. Consult a healthcare provider for testing and diagnosis."
+      ]
+    },
+    {
+      "tag": "diabetes_exercise",
+      "patterns": [
+        "Is exercise important for diabetes?",
+        "Diabetes and physical activity",
+        "How does exercise help diabetes?"
+      ],
+      "responses": [
+        "Regular exercise is crucial for managing diabetes as it helps improve insulin sensitivity and control blood sugar levels. It also promotes overall health and well-being. Consult a healthcare provider for exercise recommendations."
+      ]
+    },
+    {
+      "tag": "diabetes_technology",
+      "patterns": [
+        "What technological advancements help with diabetes management?",
+        "Diabetes-related tech solutions",
+        "Digital tools for diabetes"
+      ],
+      "responses": [
+        "There are various technological advancements in diabetes management, including continuous glucose monitoring (CGM) devices, insulin pumps, and mobile apps that help track blood sugar levels and provide insights for better management."
+      ]
+    },
+    {
+      "tag": "diabetes_injections",
+      "patterns": [
+        "Do I need insulin injections for diabetes?",
+        "Insulin therapy for diabetes",
+        "Injectable medications for diabetes"
+      ],
+      "responses": [
+        "Insulin injections may be necessary for some people with diabetes, especially in Type 1 diabetes or when oral medications are not sufficient. Your healthcare provider will determine the appropriate treatment plan."
+      ]
+    },
+    {
+      "tag": "diabetes_pregnancy",
+      "patterns": [
+        "How does diabetes affect pregnancy?",
+        "Diabetes during pregnancy",
+        "Managing diabetes while pregnant"
+      ],
+      "responses": [
+        "Diabetes during pregnancy, known as gestational diabetes, can affect both the mother and the baby. Proper management and monitoring are essential for a healthy pregnancy outcome. Consult a healthcare provider for guidance."
+      ]
+    },
+    {
+      "tag": "diabetes_children",
+      "patterns": [
+        "Can children get diabetes?",
+        "Diabetes in kids",
+        "Managing diabetes in children"
+      ],
+      "responses": [
+        "Yes, children can develop diabetes. Type 1 diabetes is more common in children and adolescents. Managing diabetes in children requires close monitoring, insulin therapy, and a supportive healthcare team."
+      ]
+    },
+    {
+      "tag": "diabetes_medicare",
+      "patterns": [
+        "Does Medicare cover diabetes-related expenses?",
+        "Medicare and diabetes care",
+        "Diabetes coverage under Medicare"
+      ],
+      "responses": [
+        "Medicare may cover certain diabetes-related expenses, including supplies, preventive services, and education. Coverage may vary, so it's essential to check with Medicare or your healthcare provider for specific details."
+      ]
+    },
+    {
+      "tag": "diabetes_emotions",
+      "patterns": [
+        "How does diabetes affect emotions?",
+        "Emotional impact of diabetes",
+        "Coping with diabetes emotionally"
+      ],
+      "responses": [
+        "Managing diabetes can have an emotional impact. It's common to experience stress, anxiety, or depression. Seek support from healthcare professionals or support groups to address the emotional aspects of diabetes."
+      ]
+    },
+    {
+      "tag": "diabetes_vaccines",
+      "patterns": [
+        "Are there vaccines for diabetes?",
+        "Diabetes prevention vaccines",
+        "Vaccination and diabetes"
+      ],
+      "responses": [
+        "There are currently no vaccines available to prevent diabetes. Prevention primarily involves lifestyle modifications and regular health check-ups."
+      ]
+    },
+    {
+      "tag": "diabetes_insulin",
+      "patterns": [
+        "What is insulin?",
+        "How does insulin work?",
+        "Role of insulin in diabetes"
+      ],
+      "responses": [
+        "Insulin is a hormone produced by the pancreas that helps regulate blood sugar levels. In diabetes, either the body doesn't produce enough insulin (Type 1) or doesn't use it effectively (Type 2). Insulin therapy is often used to manage blood sugar levels in people with diabetes."
+      ]
+    },
+    {
+      "tag": "diabetes_glucose_monitoring",
+      "patterns": [
+        "How do I monitor my blood glucose?",
+        "Blood glucose monitoring techniques",
+        "Checking blood sugar levels"
+      ],
+      "responses": [
+        "Monitoring blood glucose involves using a blood glucose meter to measure your sugar levels from a small blood sample. Regular monitoring is essential for managing diabetes and making treatment adjustments as needed."
+      ]
+    },
+    {
+      "tag": "diabetes_hypoglycemia",
+      "patterns": [
+        "What is hypoglycemia?",
+        "Low blood sugar in diabetes",
+        "Signs of hypoglycemia"
+      ],
+      "responses": [
+        "Hypoglycemia, or low blood sugar, can occur in diabetes when blood glucose levels drop too low. Symptoms may include shakiness, sweating, confusion, and dizziness. It's important to treat hypoglycemia promptly with a source of sugar."
+      ]
+    },
+    {
+      "tag": "diabetes_hyperglycemia",
+      "patterns": [
+        "What is hyperglycemia?",
+        "High blood sugar in diabetes",
+        "Symptoms of hyperglycemia"
+      ],
+      "responses": [
+        "Hyperglycemia is when blood sugar levels are higher than normal. Symptoms may include excessive thirst, frequent urination, fatigue, and blurred vision. Managing hyperglycemia involves adjusting your treatment plan and lifestyle."
+      ]
+    },
+    {
+      "tag": "diabetes_foot_care",
+      "patterns": [
+        "How to take care of diabetic feet?",
+        "Foot care for people with diabetes",
+        "Preventing foot complications"
+      ],
+      "responses": [
+        "Foot care is crucial for people with diabetes to prevent complications like neuropathy and ulcers. Proper foot hygiene, regular inspections, and well-fitting shoes are essential. Consult a healthcare provider for guidance."
+      ]
+    },
+    {
+      "tag": "diabetes_eye_health",
+      "patterns": [
+        "How does diabetes affect eye health?",
+        "Diabetic eye problems",
+        "Preventing eye complications"
+      ],
+      "responses": [
+        "Diabetes can affect eye health and lead to conditions like diabetic retinopathy. Regular eye exams and blood sugar control are essential for preventing vision problems in people with diabetes."
+      ]
+    },
+    {
+      "tag": "diabetes_kidney_health",
+      "patterns": [
+        "How does diabetes affect kidney health?",
+        "Kidney problems in diabetes",
+        "Preventing kidney complications"
+      ],
+      "responses": [
+        "Diabetes can lead to kidney problems over time. Monitoring kidney function through tests, managing blood pressure, and controlling blood sugar levels are crucial for preventing kidney complications."
+      ]
+    },
+    {
+      "tag": "diabetes_neuropathy",
+      "patterns": [
+        "What is diabetic neuropathy?",
+        "Nerve damage in diabetes",
+        "Symptoms of neuropathy"
+      ],
+      "responses": [
+        "Diabetic neuropathy is a type of nerve damage that can cause tingling, pain, or loss of sensation, usually in the feet and hands. Proper blood sugar control, medication, and pain management can help with neuropathy symptoms."
+      ]
+    },
+    {
+      "tag": "diabetes_sleep",
+      "patterns": [
+        "How does diabetes affect sleep?",
+        "Diabetes and sleep problems",
+        "Improving sleep with diabetes"
+      ],
+      "responses": [
+        "Diabetes can affect sleep patterns. High blood sugar levels and other diabetes-related factors may contribute to sleep disturbances. Practicing good sleep hygiene and managing blood sugar can help improve sleep quality."
+      ]
+    },
+    {
+      "tag": "diabetes_travelling",
+      "patterns": [
+        "Traveling with diabetes tips",
+        "Managing diabetes while traveling",
+        "Diabetes care on the go"
+      ],
+      "responses": [
+        "Traveling with diabetes requires planning. Carry extra supplies, medications, and snacks. Learn about local healthcare resources at your destination and inform your travel companions about your condition."
+      ]
+    },
+    {
+      "tag": "diabetes_workplace",
+      "patterns": [
+        "Diabetes in the workplace",
+        "Managing diabetes at work",
+        "Rights of employees with diabetes"
+      ],
+      "responses": [
+        "Employees with diabetes have legal rights in the workplace. Discuss your needs with your employer, such as accommodation for medication or scheduled breaks for blood sugar monitoring."
+      ]
+    },
+    {
+      "tag": "diabetes_teens",
+      "patterns": [
+        "Dealing with diabetes as a teenager",
+        "Teenagers and diabetes",
+        "Managing diabetes during adolescence"
+      ],
+      "responses": [
+        "Managing diabetes during adolescence can be challenging. Teenagers may need additional support and education to handle their condition effectively. Encourage open communication with healthcare providers."
+      ]
+    },
+    {
+      "tag": "diabetes_weight_management",
+      "patterns": [
+        "How can I manage my weight with diabetes?",
+        "Weight control in diabetes",
+        "Diet and exercise for weight management"
+      ],
+      "responses": [
+        "Managing weight is important for diabetes control. A balanced diet, portion control, and regular physical activity can help with weight management while maintaining stable blood sugar levels."
+      ]
+    },
+    {
+      "tag": "diabetes_alcohol",
+      "patterns": [
+        "Is it safe to drink alcohol with diabetes?",
+        "Alcohol and diabetes",
+        "Moderation and diabetes"
+      ],
+      "responses": [
+        "Moderate alcohol consumption may be acceptable for some people with diabetes, but it's essential to monitor blood sugar levels and make informed choices. Consult your healthcare provider for guidance."
+      ]
+    },
+    {
+      "tag": "diabetes_pregnancy_planning",
+      "patterns": [
+        "Planning pregnancy with diabetes",
+        "Diabetes and family planning",
+        "Managing diabetes during pregnancy preparation"
+      ],
+      "responses": [
+        "Planning a pregnancy with diabetes requires careful preparation. Achieving good blood sugar control before conception and working closely with healthcare providers is crucial for a healthy pregnancy."
+      ]
+    },
+    {
+      "tag": "diabetes_medications_side_effects",
+      "patterns": [
+        "What are the side effects of diabetes medications?",
+        "Medication side effects in diabetes",
+        "Managing medication side effects"
+      ],
+      "responses": [
+        "Diabetes medications can have side effects, which vary depending on the medication. Common side effects include hypoglycemia, weight gain, and gastrointestinal issues. Always discuss any concerns with your healthcare provider."
+      ]
+    },
+    {
+      "tag": "diabetes_mental_health",
+      "patterns": [
+        "Mental health and diabetes",
+        "Emotional well-being with diabetes",
+        "Coping with diabetes-related stress"
+      ],
+      "responses": [
+        "Diabetes can impact mental health. Managing diabetes-related stress, anxiety, and depression is essential for overall well-being. Seek support from healthcare professionals or therapists."
+      ]
+    },
+    {
+      "tag": "diabetes_family_support",
+      "patterns": [
+        "How can my family support me with diabetes?",
+        "Family and diabetes care",
+        "Involving family in diabetes management"
+      ],
+      "responses": [
+        "Family support is crucial for managing diabetes. Educate your family about your condition, involve them in meal planning and physical activities, and communicate your needs and concerns."
+      ]
+    },
+    {
+      "tag": "diabetes_pets",
+      "patterns": [
+        "Can pets help with diabetes management?",
+        "Diabetes support animals",
+        "Pets and emotional well-being"
+      ],
+      "responses": [
+        "Pets can provide emotional support and companionship, which may help with managing the emotional aspects of diabetes. However, they are not a substitute for proper medical care and treatment."
+      ]
+    },
+    {
+      "tag": "cancer_definition",
+      "patterns": [
+        "What is cancer?",
+        "Define cancer",
+        "Explanation of cancer"
+      ],
+      "responses": [
+        "Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body. It can occur in various organs and tissues and may have different forms and stages."
+      ]
+    },
+    {
+      "tag": "common_cancer_types",
+      "patterns": [
+        "What are the common types of cancer?",
+        "List of prevalent cancers",
+        "Types of cancer"
+      ],
+      "responses": [
+        "Common types of cancer include breast cancer, lung cancer, prostate cancer, colorectal cancer, and skin cancer (melanoma), among others. Each type has its unique characteristics and risk factors."
+      ]
+    },
+    {
+      "tag": "cancer_symptoms",
+      "patterns": [
+        "What are the symptoms of cancer?",
+        "Signs of cancer",
+        "How to recognize cancer?"
+      ],
+      "responses": [
+        "Cancer symptoms can vary depending on the type and stage but may include unexplained weight loss, changes in skin or moles, persistent pain, fatigue, and unusual lumps or growths. Early detection is crucial for effective treatment."
+      ]
+    },
+    {
+      "tag": "cancer_causes",
+      "patterns": [
+        "What causes cancer?",
+        "Why do people get cancer?",
+        "Factors leading to cancer"
+      ],
+      "responses": [
+        "Cancer can have various causes, including genetic mutations, exposure to carcinogens (cancer-causing substances), family history, unhealthy lifestyle choices (such as smoking and poor diet), and certain infections."
+      ]
+    },
+    {
+      "tag": "cancer_prevention",
+      "patterns": [
+        "How to prevent cancer?",
+        "Cancer prevention tips",
+        "Ways to reduce cancer risk"
+      ],
+      "responses": [
+        "Preventing cancer involves lifestyle choices such as avoiding tobacco, maintaining a healthy diet, staying physically active, protecting your skin from sun exposure, and getting vaccinated against certain infections like HPV and hepatitis B."
+      ]
+    },
+    {
+      "tag": "cancer_screening",
+      "patterns": [
+        "Why is cancer screening important?",
+        "Benefits of cancer screening",
+        "When should I get screened for cancer?"
+      ],
+      "responses": [
+        "Cancer screening is essential because it can detect cancer in its early stages when treatment is more effective. The recommended screening age and frequency depend on the type of cancer and individual risk factors."
+      ]
+    },
+    {
+      "tag": "cancer_diagnosis",
+      "patterns": [
+        "How is cancer diagnosed?",
+        "Cancer diagnosis process",
+        "Tests for detecting cancer"
+      ],
+      "responses": [
+        "Cancer diagnosis often involves imaging tests like CT scans and MRIs, as well as biopsies to examine tissue samples. Blood tests and genetic testing may also help in confirming the presence of cancer."
+      ]
+    },
+    {
+      "tag": "cancer_staging",
+      "patterns": [
+        "What is cancer staging?",
+        "Stages of cancer",
+        "How is cancer staged?"
+      ],
+      "responses": [
+        "Cancer staging is a system used to describe the extent and severity of cancer. Stages range from 0 (early, localized cancer) to IV (advanced cancer that has spread). Staging helps determine treatment options and prognosis."
+      ]
+    },
+    {
+      "tag": "cancer_treatment",
+      "patterns": [
+        "How is cancer treated?",
+        "Cancer treatment options",
+        "Types of cancer therapies"
+      ],
+      "responses": [
+        "Cancer treatment may include surgery, radiation therapy, chemotherapy, immunotherapy, targeted therapy, and hormone therapy. The choice of treatment depends on the type of cancer, stage, and individual patient factors."
+      ]
+    },
+    {
+      "tag": "cancer_support",
+      "patterns": [
+        "Where can I find support for cancer patients?",
+        "Cancer support groups",
+        "Help for coping with cancer"
+      ],
+      "responses": [
+        "Cancer patients can find support through local support groups, online communities, and organizations that offer resources and counseling services. Support from friends and family is also crucial."
+      ]
+    },
+    {
+      "tag": "cancer_survivorship",
+      "patterns": [
+        "Life after cancer treatment",
+        "Survivorship after cancer",
+        "Coping with life after cancer"
+      ],
+      "responses": [
+        "Life after cancer treatment can present its own challenges. Survivorship care focuses on monitoring for recurrence, managing long-term side effects, and helping survivors regain their quality of life."
+      ]
+    },
+    {
+      "tag": "cancer_emotions",
+      "patterns": [
+        "Emotional impact of cancer",
+        "Dealing with cancer emotions",
+        "Coping with a cancer diagnosis"
+      ],
+      "responses": [
+        "A cancer diagnosis can have a profound emotional impact. Many individuals experience fear, anxiety, depression, and stress. Support from mental health professionals and loved ones can help cope with these emotions."
+      ]
+    },
+    {
+      "tag": "cancer_clinical_trials",
+      "patterns": [
+        "What are clinical trials for cancer?",
+        "Participating in cancer research",
+        "Benefits and risks of clinical trials"
+      ],
+      "responses": [
+        "Clinical trials are research studies that test new cancer treatments or therapies. Participation in clinical trials can provide access to cutting-edge treatments, but it's essential to weigh the potential benefits and risks."
+      ]
+    },
+    {
+      "tag": "cancer_financial_support",
+      "patterns": [
+        "Financial assistance for cancer patients",
+        "Managing cancer-related costs",
+        "Help with medical bills"
+      ],
+      "responses": [
+        "Cancer treatment can be expensive, and financial assistance programs are available to help with medical costs, prescription medications, and other expenses. Social workers and patient advocacy groups can provide guidance."
+      ]
+    },
+    {
+      "tag": "cancer_nutrition",
+      "patterns": [
+        "Diet and nutrition for cancer patients",
+        "Eating well during cancer treatment",
+        "Nutrition tips for cancer"
+      ],
+      "responses": [
+        "Proper nutrition is essential for cancer patients, as it can support treatment and overall health. A balanced diet that meets individual needs can help manage symptoms and maintain strength."
+      ]
+    },
+    {
+      "tag": "cancer_caregivers",
+      "patterns": [
+        "Support for cancer caregivers",
+        "Caring for a loved one with cancer",
+        "Coping as a cancer caregiver"
+      ],
+      "responses": [
+        "Cancer caregivers play a vital role in a patient's journey. They can find support and resources through caregiver organizations and healthcare providers to help them provide the best care and cope with their own needs."
+      ]
+    },
+    {
+      "tag": "cancer_early_detection",
+      "patterns": [
+        "Why is early detection of cancer crucial?",
+        "Importance of catching cancer early",
+        "How does early detection affect prognosis?"
+      ],
+      "responses": [
+        "Early detection of cancer is crucial because it often leads to more effective treatment and better outcomes. Regular screenings and awareness of potential symptoms can significantly impact a patient's prognosis."
+      ]
+    },
+    {
+      "tag": "cancer_treatment_decisions",
+      "patterns": [
+        "How to make decisions about cancer treatment?",
+        "Choosing the right cancer treatment",
+        "Informed choices in cancer therapy"
+      ],
+      "responses": [
+        "Making decisions about cancer treatment involves discussions with healthcare providers, considering treatment options, understanding risks and benefits, and aligning treatment choices with individual goals and values."
+      ]
+    },
+    {
+      "tag": "cancer_supportive_care",
+      "patterns": [
+        "What is supportive care in cancer?",
+        "Supportive therapies for cancer patients",
+        "Enhancing quality of life during cancer treatment"
+      ],
+      "responses": [
+        "Supportive care in cancer focuses on improving the quality of life for patients by managing symptoms, providing pain relief, and addressing emotional and psychological needs. It complements cancer treatment."
+      ]
+    },    {
+      "tag": "appointment_request",
+      "patterns": [
+        "I need to book an appointment with a doctor",
+        "Can you help me schedule a doctor's appointment?",
+        "I want to see a healthcare professional"
+      ],
+      "responses": [
+        "Of course! I can assist you with that. What kind of doctor you're hoping to consult?"
+      ]
+    },
+    {
+      "tag": "cancer_appointment",
+      "patterns": [
+        "I need to see an oncologist",
+        "Book an appointment with an oncologist",
+        "I suspect I have cancer"
+      ],
+      "responses": [
+        "I'm sorry to hear that you have concerns about cancer. Let's get you an appointment. Dr. Kamal is available for appointments from 10:00 AM to 4:00 PM, Sunday through Thursday."
+      ]
+    },
+    {
+      "tag": "kamal_appointment",
+      "patterns": [
+        "What is the time slot for Dr. Kamal",
+        "When Dr. kamal is available",
+        "I need Dr. Kamal's help"
+      ],
+      "responses": [
+        "I'm sorry to hear that you have concerns about cancer. Let's get you an appointment. Dr. Kamal is available for appointments from 10:00 AM to 4:00 PM, Sunday through Thursday."
+      ]
+    },
+    {
+      "tag": "diabetes_appointment",
+      "patterns": [
+        "I have diabetes and need to see an endocrinologist",
+        "Schedule an appointment with an endocrinologist for diabetes",
+        "Manage my diabetes with a doctor",
+        "I need appointement for checking my diabetes"
+      ],
+      "responses": [
+        "Certainly! Managing diabetes is important. Dr. Hamid is available for appointments from 10:00 AM to 4:00 PM, Sunday through Thursday."
+      ]
+    },
+    {
+      "tag": "heart_disease_appointment",
+      "patterns": [
+        "I've been experiencing chest pain and want to see a cardiologist",
+        "Book an appointment with a heart specialist",
+        "Concerned about heart disease",
+        "I think I'm having a heart attack"
+      ],
+      "responses": [
+        "Chest pain is a serious concern. Dr. Rakib is available for appointments from 10:00 AM to 4:00 PM, Monday through Thursday."
+      ]
+    }
+
+  ]
+}
